@@ -1,4 +1,4 @@
-## Foiltrans
+## FoilTrans
 
 This is the original version created by Bjornar Svingen (bjornar.svingen@ktv.no)  according to internet lore.  This is posted here for posterity since the original dissapeared from the internet circa 2018.
 
