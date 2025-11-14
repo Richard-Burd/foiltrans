@@ -1,0 +1,593 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 9">
+<meta name="Originator" content="Microsoft Word 9">
+<link rel="File-List" href="file:///C:/Program%20Files%20%28x86%29/FoilTrans/readme_files/filelist.xml">
+<link rel="Edit-Time-Data" href="file:///C:/Program%20Files%20%28x86%29/FoilTrans/readme_files/editdata.mso">
+<link rel="OLE-Object-Data" href="file:///C:/Program%20Files%20%28x86%29/FoilTrans/readme_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>FoilTrans</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Pappa</o:Author>
+  <o:LastAuthor>Pappa</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>352</o:TotalTime>
+  <o:Created>2004-01-30T11:48:00Z</o:Created>
+  <o:LastSaved>2004-01-30T11:48:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>1092</o:Words>
+  <o:Characters>6228</o:Characters>
+  <o:Company>Home</o:Company>
+  <o:Lines>51</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>7648</o:CharactersWithSpaces>
+  <o:Version>9.6926</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body style="tab-interval:36.0pt" lang="EN-GB" link="blue" vlink="purple">
+
+<div class="Section1">
+
+<h1><span style="mso-ansi-language:NO-BOK" lang="NO-BOK">FoilTrans<o:p></o:p></span></h1>
+
+<p class="MsoNormal"><span style="mso-ansi-language:NO-BOK" lang="NO-BOK"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal">FoilTrans ’transforms’ basic Cl, Cd, Cm data to X-Plane foil
+files (.afl files). It does this by statistical analysis and best fit curves.
+It is particularly suitable for polars made from Martin Hepperle’s JavaFoil, <a href="http://www.mh-aerotools.de/airfoils/javafoil.htm">http://www.mh-aerotools.de/airfoils/javafoil.htm</a>
+or Xfoil, <a href="http://raphael.mit.edu/xfoil/">http://raphael.mit.edu/xfoil/</a>
+because it reads data files made by these programs, but can also be used for
+generic data. Downloads, manuals etc for those programs can be found at the
+sites mentioned above.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt">After
+installation you will need to install the LabVIEW runtime environment for
+LabVIEW 7.0 (20MB download)</span>. <a href="ftp://ftp.ni.com/support/labview/runtime/windows/7.0/LVRunTimeEng.exe">ftp.ni.com/support/labview/runtime/windows/7.0/LVRunTimeEng.exe</a></p>
+
+<p class="MsoNormal"><span style="mso-spacerun: yes">&nbsp;</span></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<h1>Example</h1>
+
+<p class="MsoNormal">When starting the program it looks like <span style="mso-field-code:&quot;REF _Ref63174171 \\h&quot;">Figure 1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600360033003100370034003100370031000000</w:data>
+</xml><![endif]--></span>. I assume that you know how to use JavaFoil or Xfoil
+and how to save data, or have set up a generic file to read into FoilTrans. </p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal" style="page-break-after:avoid"><!--[if gte vml 1]><v:line
+ id="_x0000_s1031" style='position:absolute;flip:x;z-index:5' from="171pt,47.2pt"
+ to="207pt,74.2pt">
+ <v:stroke endarrow="block"/>
+</v:line><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:
+absolute;z-index:4;margin-left:227px;margin-top:62px;width:51px;height:39px"><img src="TransFoil%20readme_files/image001.gif" v:shapes="_x0000_s1031" height="39" width="51"></span><!--[endif]--><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1030" type="#_x0000_t202" style='position:absolute;
+ margin-left:3in;margin-top:20.2pt;width:90pt;height:36pt;z-index:4' stroked="f"/><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:absolute;z-index:3;margin-left:288px;
+margin-top:27px;width:122px;height:50px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="vertical-align:
+  top;background:white" align="left" bgcolor="white" height="50" valign="top" width="122"><!--[endif]--><!--[if !mso]--><span style="position:absolute;
+  z-index:4">
+  <table cellpadding="0" cellspacing="0" width="100%">
+   <tbody><tr>
+    <td><!--[endif]-->
+    <div v:shape="_x0000_s1030" style="padding:3.6pt 7.2pt 3.6pt 7.2pt" class="shape">
+    <p class="MsoNormal"><span style="mso-ansi-language:NO-BOK" lang="NO-BOK">180
+    or 20 degree view<o:p></o:p></span></p>
+    </div>
+    <!--[if !mso]--></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & !vml]-->&nbsp;<!--[endif]--><!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1027" type="#_x0000_t202"
+ style='position:absolute;margin-left:5in;margin-top:47.2pt;width:63pt;
+ height:27pt;z-index:1' stroked="f"/><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:absolute;z-index:0;margin-left:480px;
+margin-top:63px;width:86px;height:38px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="vertical-align:
+  top;background:white" align="left" bgcolor="white" height="38" valign="top" width="86"><!--[endif]--><!--[if !mso]--><span style="position:absolute;
+  z-index:1">
+  <table cellpadding="0" cellspacing="0" width="100%">
+   <tbody><tr>
+    <td><!--[endif]-->
+    <div v:shape="_x0000_s1027" style="padding:3.6pt 7.2pt 3.6pt 7.2pt" class="shape">
+    <p class="MsoNormal"><span style="mso-ansi-language:NO-BOK" lang="NO-BOK">Cl
+    graph<o:p></o:p></span></p>
+    </div>
+    <!--[if !mso]--></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & !vml]-->&nbsp;<!--[endif]--><!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1029" type="#_x0000_t202"
+ style='position:absolute;margin-left:369pt;margin-top:263.2pt;width:63pt;
+ height:27pt;z-index:3' stroked="f"/><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:absolute;z-index:2;margin-left:492px;
+margin-top:351px;width:86px;height:38px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="vertical-align:
+  top;background:white" align="left" bgcolor="white" height="38" valign="top" width="86"><!--[endif]--><!--[if !mso]--><span style="position:absolute;
+  z-index:3">
+  <table cellpadding="0" cellspacing="0" width="100%">
+   <tbody><tr>
+    <td><!--[endif]-->
+    <div v:shape="_x0000_s1029" style="padding:3.6pt 7.2pt 3.6pt 7.2pt" class="shape">
+    <p class="MsoNormal"><span style="mso-ansi-language:NO-BOK" lang="NO-BOK">Cm
+    graph<o:p></o:p></span></p>
+    </div>
+    <!--[if !mso]--></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & !vml]-->&nbsp;<!--[endif]--><!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t202"
+ style='position:absolute;margin-left:297pt;margin-top:173.2pt;width:63pt;
+ height:27pt;z-index:2' stroked="f"/><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:absolute;z-index:1;margin-left:396px;
+margin-top:231px;width:86px;height:38px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td style="vertical-align:
+  top;background:white" align="left" bgcolor="white" height="38" valign="top" width="86"><!--[endif]--><!--[if !mso]--><span style="position:absolute;
+  z-index:2">
+  <table cellpadding="0" cellspacing="0" width="100%">
+   <tbody><tr>
+    <td><!--[endif]-->
+    <div v:shape="_x0000_s1028" style="padding:3.6pt 7.2pt 3.6pt 7.2pt" class="shape">
+    <p class="MsoNormal"><span style="mso-ansi-language:NO-BOK" lang="NO-BOK">Cd
+    graph<o:p></o:p></span></p>
+    </div>
+    <!--[if !mso]--></td>
+   </tr>
+  </tbody></table>
+  </span><!--[endif]--><!--[if !mso & !vml]-->&nbsp;<!--[endif]--><!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:470.25pt;
+ height:374.25pt' o:allowoverlap="f">
+ <v:imagedata src="./readme_files/image002.png" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image003.jpg" v:shapes="_x0000_i1025" border="0" height="499" width="627"><!--[endif]--></p>
+
+<p class="MsoCaption"><a name="_Ref63174171">Figure <span style="mso-field-code:
+&quot;SEQ Figure \\* ARABIC&quot;">1</span></a> Layout of FoilTrans</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">The first thing to do is to press <b>Init-&gt;Set Default XP
+Background File</b>. This initiates the data and loads a ‘default’ .afl foil.
+Your view will look like the one in <span style="mso-field-code:&quot;REF _Ref63174708 \\h&quot;">Figure
+2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600360033003100370034003700300038000000</w:data>
+</xml><![endif]--></span>.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal" style="page-break-after:avoid"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:470.25pt;height:374.25pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./readme_files/image004.png" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image005.jpg" v:shapes="_x0000_i1026" border="0" height="499" width="627"><!--[endif]--></p>
+
+<p class="MsoCaption"><a name="_Ref63174708">Figure <span style="mso-field-code:
+&quot;SEQ Figure \\* ARABIC&quot;">2</span></a> after initiation</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Then you load your data file saved with JavaFoil, Xfoil or a
+generic one. The data has to start on –20 degree, end on +20 degree and should
+have a top Cl before +20 degree<a style="mso-footnote-id:ftn1" href="#_ftn1" name="_ftnref1" title=""><span class="MsoFootnoteReference"><span style="mso-special-character:footnote"><!--[if !supportFootnotes]-->[1]<!--[endif]--></span></span></a>.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">You do this by <b>File-&gt;Load Foil Data-&gt;xxx</b>, where
+xxx is one of several options. The data is either smoothed with a cubic spline,
+or interpolated linearly. I found that good results are obtained when using
+JavaFoil with 1 or 2 degrees steps for the data and cubic spline smoothing. For
+Xfoil it is probably better to save the data at 0.1 degree intervals and use
+either splines or linear interpolation. You just have to try different options
+and see what looks best. When using generic data, the data needs to be
+formatted as shown below. Alpha<sub>1</sub> must to be –20 degrees and alpha<sub>N</sub>
+must be +20 degrees, and the file must contain only numbers. Between –20 and
++20 degrees you can have as many points as you like, just as long as you have
+max Cl before +20 degree and min Cl after –20 degree.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if gte vml 1]><v:shape id="_x0000_s1033" type="#_x0000_t202"
+ style='position:absolute;margin-left:0;margin-top:4.5pt;width:5in;height:108pt;
+ z-index:6;mso-position-horizontal:left'>
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><span lang=EN-US style='font-family:"Courier New";
+    mso-ansi-language:EN-US'>Alpha<sub>1</sub> Cl<sub>1</sub> Cd1 Cm<sub>1</sub><o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-family:"Courier New";
+    mso-ansi-language:EN-US'>Alpha<sub>2</sub> Cl<sub>2</sub> Cd<sub>2</sub> Cm<sub>2</sub><o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-family:"Courier New";
+    mso-ansi-language:EN-US'>..<o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-family:"Courier New";
+    mso-ansi-language:EN-US'>..<o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-family:"Courier New";
+    mso-ansi-language:EN-US'>..<o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-family:"Courier New";
+    mso-ansi-language:EN-US'>Alpha<sub>N</sub> Cl<sub>N</sub> Cd<sub>N</sub> Cm<sub>N</sub><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image006.gif" alt="Text Box: Alpha1 Cl1 Cd1 Cm1
+Alpha2 Cl2 Cd2 Cm2
+..
+..
+..
+AlphaN ClN CdN CmN
+" v:shapes="_x0000_s1033" align="left" height="147" hspace="12" width="483"><!--[endif]--></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Your view will now look something like <span style="mso-field-code:&quot;REF _Ref63175821 \\h&quot;">Figure 3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600360033003100370035003800320031000000</w:data>
+</xml><![endif]--></span>.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal" style="page-break-after:avoid"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:470.25pt;height:374.25pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./readme_files/image007.png" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image008.jpg" v:shapes="_x0000_i1027" border="0" height="499" width="627"><!--[endif]--></p>
+
+<p class="MsoCaption"><a name="_Ref63175821">Figure <span style="mso-field-code:
+&quot;SEQ Figure \\* ARABIC&quot;">3</span></a> Loaded data</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Now you have to do one thing manually, and that is to
+prescribe the Cm curve. You do this by first pressing the ‘Scale’ slider so
+that the view is from –20 to +20 degrees. Your Cm curve should now look
+something like <span style="mso-field-code:&quot;REF _Ref63176263 \\h&quot;">Figure 4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600360033003100370036003200360033000000</w:data>
+</xml><![endif]--></span>. On the Cm curve are two cursors marked as a cross.
+The idea is to move those cursors with the mouse to fit the green curve to the
+red curve (the red curve is the loaded data). If you can’t find the cursors,
+then press the ‘Centre Cm Cursors’ and they will go to 0,0. The green lines
+will follow the cursors.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal" style="page-break-after:avoid"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:496.5pt;height:174.75pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./readme_files/image009.png" o:title="" croptop="43947f"
+  cropbottom="1084f" cropleft="18831f" cropright="264f"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image010.jpg" v:shapes="_x0000_i1028" border="0" height="233" width="662"><!--[endif]--></p>
+
+<p class="MsoCaption"><a name="_Ref63176263">Figure <span style="mso-field-code:
+&quot;SEQ Figure \\* ARABIC&quot;">4</span></a></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">When that is done, the Cm graph will look something like <span style="mso-field-code:&quot;REF _Ref63176674 \\h&quot;">Figure 5<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600360033003100370036003600370034000000</w:data>
+</xml><![endif]--></span>.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal" style="page-break-after:avoid"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:491.25pt;height:172.5pt'
+ o:allowoverlap="f">
+ <v:imagedata src="./readme_files/image011.png" o:title="" croptop="44067f"
+  cropbottom="993f" cropleft="18831f" cropright="264f"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image012.jpg" v:shapes="_x0000_i1029" border="0" height="230" width="655"><!--[endif]--></p>
+
+<p class="MsoCaption"><a name="_Ref63176674">Figure <span style="mso-field-code:
+&quot;SEQ Figure \\* ARABIC&quot;">5</span></a></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Then you set your Re number, Thickness and Drag Div Mach to
+appropriate numbers for your foil. This is done in the upper left corner.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Press the ‘Modded foil’ tab (should be all zeroes right
+now).</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Then press <b>Modify-&gt;Calculate parameters for XP foil
+format</b>. This will calculate all the parameters needed (intercept, slope
+linear range etc) and you have a valid XPlane foil that is the best statistical
+approximation to your data, considering that your data is fairly good.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Now you can press <b>Modify-&gt;Extend foil data to –180
++180</b> and press <b>File-&gt;Save modded file</b> and you have a valid
+X-Plane .afl file that you can use.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">In Airfoil-Maker you can change one number, then change it
+back so that AM ‘builds’ an airfoil based on the parameters and extends it to
+–180 and +180 degrees based on it’s own functions using the parameters from FoilTrans.
+For compatibility reasons this will be the best choice and virtually nothing is
+changed in the range ‘–linear range’ to +20 degrees for the Cl curve (for
+normal flying you won’t notice any difference at all). However, due to the
+parametric curves in Airfoil-Maker you will lose some details, especially for
+the Cd and Cm curves outside the linear range.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<h1>Other options and things</h1>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">AM seems to extend the data to –180 and 180 degrees by
+multiplying Cl with 0.5, Cd by 4.0 and Cm by 0.0. In FoilTrans you can change
+this by setting your own values in the ‘Extend data’ area. For instance when
+setting all three parameters to 1.0, your foil will have the same
+characteristics flying backwards and forwards. You can save the plots as bmp
+files, paste your foil data directly into the background XP foil, and study the
+data more closely by using the graph tools just left of the graphs.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">In the install directory there is an ini file with one
+value. By changing it to True the program will use the local decimal point
+(comma in Europe), otherwise it will use a decimal dot. It will read and write
+correctly (I hope) no matter what you use.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<h2>Calculations of data</h2>
+
+<p class="MsoNormal">I found that with Airfoil-Maker in XP you can reproduce the
+foil data quite accurate in the range -20 to +20 degree in general. This range
+is basically where all the parameters are set. The Cl curve is defined and thus,
+very accurate in the range –linear range to +20 degree. The Cd curve is defined
+from Cd min to +10 degree, while the Cm curve is fairly accurate in the range
+of the linear range of Cl. Outside those ranges the accuracy decreases. The
+good point with the Airfoil-Maker approach is that the data gets effectively
+smoothed as they should be, but in some cases it will be a bit restrictive.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">In FoilTrans the parameters are found using best-fit statistics
+on the data. In the range –20 to +20 degree the step size is 0.1 degree (-20.0 –19.9
+–19.8 ,, +19.9 +20.0). When reading in data, FoilTrans just reads line by line
+and take whatever it gets. The data is then interpolated in a step size of 0.1
+degree using linear interpolation or cubic splines.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">The <i>intercept</i>, <i>slope</i> and <i>linear</i> <i>range</i>
+are found using linear best-fit approximation. This is done stepwise by
+starting at zero aoa and increasing the range 0.1 degree in both directions and
+calculating the best fit linear line and its mean square error, mse. When the
+mse is larger than 1e-5 it stops. The <i>intercept</i>, <i>slope</i> and <i>linear</i>
+<i>range</i> therefore have an mse of 1e-5. In addition the max range is 10 degree
+and min range is 1 degree.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">The max and min values are found simply by finding them in
+the data. The ‘power’ data values are found using the Levenberg-Marquardt
+algorithm on the data with a <sub><!--[if gte vml 1]><v:shape id="_x0000_i1032"
+ type="#_x0000_t75" style='width:20.25pt;height:15.75pt' o:ole="">
+ <v:imagedata src="./readme_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="TransFoil%20readme_files/image014.gif" v:shapes="_x0000_i1032" border="0" height="21" width="27"><!--[endif]--></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1136972062">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes">&nbsp;</span>function. <i>b</i> is
+then found to be the best fit ‘power’ value while <i>a</i> is found from the
+start and end values of the piece of curve.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<h2>Foil Calculation Software</h2>
+
+<p class="MsoNormal">I have only used Xfoil and JavaFoil, and I found that JavaFoil
+is better for general use for high Re numbers. JavaFoil seems to give data that
+is more in accordance with wind tunnel tests than Xfoil does (often spot on),
+and it also seems to have a better stall model (the Eppler stall model). Xfoil
+is presumed to be more advanced, but that is only relevant for low Re numbers
+when laminar separation bobbles are important as far as I can tell. Xfoil does
+have better foil editing tools. </p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal">Have fun.</p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<p class="MsoNormal"><a href="mailto:bjornar.svingen@ktv.no">bjornar.svingen@ktv.no</a></p>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+</div>
+
+<div style="mso-element:footnote-list"><!--[if !supportFootnotes]--><br clear="all">
+
+<hr align="left" size="1" width="33%">
+
+<!--[endif]-->
+
+<div style="mso-element:footnote" id="ftn1">
+
+<p class="MsoFootnoteText"><a style="mso-footnote-id:ftn1" href="#_ftnref1" name="_ftn1" title=""><span class="MsoFootnoteReference"><span style="mso-special-character:
+footnote"><!--[if !supportFootnotes]-->[1]<!--[endif]--></span></span></a> The max Cl
+before +20 degree is an X-Plane limitation.</p>
+
+</div>
+
+</div>
+
+
+
+
+</body></html>

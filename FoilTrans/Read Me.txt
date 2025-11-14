@@ -1,0 +1,6 @@
+After installing FoilTrans, After installation you will need to install the LabVIEW runtime environment for LabVIEW 7.0 (20MB download) which is free:
+
+it's in this folder marked as: 
+
+"LVRunTimeEng"
+
